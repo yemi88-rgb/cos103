@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNATO Student Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>FUNATO</h2>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#overview" class="active">Overview</a>
+                <a href="#results">Results</a>
+                <a href="#timetable">Timetable</a>
+                <a href="#notifications">Notifications</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="topbar">
+                <button id="menuBtn" class="menu-btn"><i class="fas fa-bars"></i></button>
+                <div class="page-title">
+                    <h1>Student Dashboard</h1>
+                    <p>FUNATO/CSC/2026/001 • Pioneer Student</p>
+                </div>
+            </div>
+
+            <section id="overview" class="content-grid">
+                <div class="card profile-card">
+                    <div class="card-title">
+                        <h3>Profile</h3>
+                    </div>
+                    <div class="profile-head">
+                        <div class="profile-meta-full">
+                            <h3>Pioneer Student</h3>
+                            <p>Cyber Security Student</p>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <span>Matric No:</span>
+                        <span>FUNATO/CYS/2026/0231</span>
+                    </div>
+                    <div class="profile-info">
+                        <span>Level:</span>
+                        <span>100L</span>
+                    </div>
+                    <div class="profile-info">
+                        <span>Faculty:</span>
+                        <span>Cyber Security</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <h3>Quick Stats</h3>
+                    </div>
+                    <div class="dashboard-cards">
+                        <div class="dash-card">
+                            <h4>CGPA</h4>
+                            <span>4.72</span>
+                        </div>
+                        <div class="dash-card">
+                            <h4>Courses</h4>
+                            <span>8 Registered</span>
+                        </div>
+                        <div class="dash-card">
+                            <h4>Fees</h4>
+                            <span>Paid</span>
+                        </div>
+                        <div class="dash-card">
+                            <h4>Alerts</h4>
+                            <span>2 New</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="results" class="content-grid">
+                <div class="card">
+                    <div class="card-title">
+                        <h3>Semester Results</h3>
+                    </div>
+                    <div class="result-box">
+                        <p>First Semester GPA</p>
+                        <h2>4.72</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section id="timetable" class="content-grid">
+                <div class="card">
+                    <div class="card-title">
+                        <h3>Today's Lectures</h3>
+                    </div>
+                    <div class="lecture">
+                        <h4>COS 103</h4>
+                        <p>9:00AM - ICT Hall</p>
+                    </div>
+                    <div class="lecture">
+                        <h4>MTH 101</h4>
+                        <p>12:00PM - Lecture Theatre</p>
+                    </div>
+                    <div class="lecture">
+                        <h4>GST 111</h4>
+                        <p>5:00PM - Lecture Theatre</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="notifications" class="content-grid">
+                <div class="card large-card">
+                    <div class="card-title">
+                        <h3>Latest Notifications</h3>
+                    </div>
+                    <div class="notice">
+                        <i class="fas fa-circle"></i>
+                        <p>Course registration closes next week.</p>
+                    </div>
+                    <div class="notice">
+                        <i class="fas fa-circle"></i>
+                        <p>First semester exams begin next month.</p>
+                    </div>
+                    <div class="notice">
+                        <i class="fas fa-circle"></i>
+                        <p>Students should complete school fees payment.</p>
+                    </div>
+                </div>
+            </section>
+
+            <p class="footer-note">Need to return to the public site? <a href="index.html">Go back to FUNATO homepage</a>.</p>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
